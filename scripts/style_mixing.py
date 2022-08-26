@@ -76,6 +76,7 @@ def run():
 					_, latent_to_inject = net(cur_vec,
 					                          input_code=True,
 					                          return_latents=True)
+					print(latent_to_inject)
 					# get output image with injected style vector
 					res = net(input_image.unsqueeze(0).to("cuda").float(),
 					          latent_mask=latent_mask,
@@ -83,7 +84,6 @@ def run():
 					          alpha=opts.mix_alpha,
 							  resize=opts.resize_outputs)
 					multi_modal_outputs.append(res[0])
-
 				# visualize multi modal outputs
 				input_im_path = dataset.paths[global_i]
 				image = input_batch[image_idx]

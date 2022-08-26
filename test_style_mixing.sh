@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python scripts/style_mixing.py --exp_dir=/home/graydove/Nvme/pixel2style2pixel/ --checkpoint_path=psp_ffhq_encode.pt --data_path=/home/graydove/Nvme/CelebA-HQ-img/ --test_batch_size=1 --test_workers=1 --n_images=1 --n_outputs_to_generate=18 --latent_mask=8,9,10,11,12,13,14,15,16,17

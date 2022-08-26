@@ -1,0 +1,1 @@
+python scripts/inference.py --exp_dir=/home/graydove/Nvme/pixel2style2pixel/ --checkpoint_path=psp_ffhq_encode.pt --data_path=/home/graydove/Nvme/CelebA-HQ-img-0/ --test_batch_size=1 --test_workers=1 --couple_outputs
